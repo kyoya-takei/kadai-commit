@@ -1,3 +1,10 @@
+<?php
+require_once "functions.php";
+
+$result = "無し";
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
     <haed>
@@ -7,7 +14,7 @@
     
     <body>
         <h1>おみくじ</h1>
-        <p>おみくじの結果：なし</p>
+        <p>おみくじの結果：<?php print h($result); ?></p>
         
         <form action="sample.php" method="POST">
             <button type="submit" name="act" value="draw">おみくじを引く！</button>
